@@ -110,6 +110,20 @@ a {
   box-shadow: 0 12px 24px rgba(22, 82, 44, 0.25);
 }
 
+/* Specific Navigation WhatsApp Contrast Fix Override */
+.nav .nav-cta, 
+.site-header .nav-cta {
+  background-color: var(--green-700) !important;
+  color: #ffffff !important;
+}
+
+.nav .nav-cta:hover, 
+.site-header .nav-cta:hover {
+  background-color: var(--green-800) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
 .btn.ghost {
   border: 1px solid rgba(18, 61, 36, 0.15);
   background: var(--bg-card-light);
@@ -292,12 +306,12 @@ p {
   margin-bottom: 4px;
 }
 
-/* Green Soft Layout Fix (The old green-on-green bug) */
+/* Clear background fixes */
 .green-soft {
   background: var(--bg-green-soft);
 }
 
-/* Beautiful Lists Updates (No more dark green on green text!) */
+/* Modernized Lists with crisp readability */
 .check-list, .brand-list {
   padding: 0;
   margin: 0 0 32px;
@@ -312,7 +326,7 @@ p {
   padding: 16px 20px;
   border-radius: 12px;
   font-weight: 600;
-  color: var(--text-dark); /* Changed from green-900 to readable dark neutral text */
+  color: var(--text-dark);
   box-shadow: 0 4px 12px rgba(0,0,0,0.02);
 }
 
@@ -323,7 +337,7 @@ p {
 }
 
 .dist-images img {
-  height: 48px0px;
+  height: 480px;
 }
 
 .logo-strip {
@@ -380,7 +394,6 @@ p {
   padding: 60px 40px;
 }
 
-/* Overriding white text precisely inside dark container */
 .contact h2 { color: var(--text-light); }
 .contact p { color: rgba(255, 255, 255, 0.8); }
 .contact-links {
